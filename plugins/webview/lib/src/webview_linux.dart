@@ -13,7 +13,7 @@ class LinuxWebView implements WebViewPlatform {
     BuildContext context,
     CreationParams creationParams,
   }) {
-    return LinuxView(
+    return GtkView(
       viewType: 'plugins.flutter.io/webview',
       creationParams:
           MethodChannelWebViewPlatform.creationParamsToMap(creationParams),
